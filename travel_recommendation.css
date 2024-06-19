@@ -1,0 +1,80 @@
+body {
+    background-image: url('https://www.tripsavvy.com/thmb/2AGo509kDat7XpEKPCAw2pQhRzk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cityscape-of-melbourne-city-of-australia-during-the-sunset--873409300-8db98cef20b44200abfb339188d801f7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.nav-bar>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fa .fa-plane{
+    color: white;
+    margin: auto;
+}
+
+li i {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    margin: auto; 
+}
+
+.nav-links>li {
+    float: left;
+    padding: 10px;
+}
+
+.search-bar {
+    float: right;
+    background-color: white;
+    border: none;
+    color: rgb(0, 63, 53);
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+
+.fa .fa-search {
+    color: rgb(0, 63, 53);
+}
+
+#search {
+    background-color:  none;
+    border: none;
+    text-align: left;
+    display: inline-block;
+    color: rgb(0, 63, 53);
+    width: 200px;
+    margin: 2px;
+}
+
+#search-button, #clear-button {
+    background-color:  rgb(0, 63, 53);
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+

@@ -151,7 +151,6 @@ ul.socials>li {
 
 .reccomendation {
     display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
     order: 2;
 }

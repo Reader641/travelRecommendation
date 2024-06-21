@@ -88,9 +88,16 @@ i {
     border-radius: 8px;
 }
 
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 ul.socials {
     list-style-type: none;
-    float: left;
     display: flex;
     order: 0;
     flex-wrap: nowrap;
@@ -107,7 +114,7 @@ ul.socials>li {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .home-page-title{
@@ -152,5 +159,6 @@ ul.socials>li {
 .reccomendation {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     order: 2;
 }

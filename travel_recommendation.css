@@ -93,6 +93,7 @@ ul.socials {
     float: left;
     display: flex;
     order: 0;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
 }
@@ -148,5 +149,9 @@ ul.socials>li {
     order: 2;
 }
 
-
-
+.reccomendation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    order: 2;
+}

@@ -88,6 +88,32 @@ i {
     border-radius: 8px;
 }
 
+ul.socials {
+    list-style-type: none;
+    float: left;
+    display: flex;
+    order: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.socials>li {
+    display: block;
+    padding-top: 10px;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.home-page-title{
+    display: block;
+    order: 0;
+}
+
 .home-page-title>p {
     color: white;
     font-size: 128px;
@@ -95,17 +121,14 @@ i {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.home-page-title{
+.home-page-text{
     display: block;
+    order: 1;
 }
 
 .home-page-text>p{
     color: white;
     font-size: 16px;
-}
-
-.home-page-text{
-    display: block;
 }
 
 #book-now {
@@ -121,30 +144,9 @@ i {
     border-radius: 6px;
     opacity: 0.8;
     font-size: 16px;
-    top:800px
+    top:800px;
+    order: 2;
 }
 
-ul.socials {
-    list-style-type: none;
-    float: left;
-
-}
-
-ul.socials>li {
-    display: block;
-    padding-top: 10px;
-}
-
-.row-1 {
-    width: 10%
-}
-
-.row-2 {
-    width: 45%
-}
-
-.row-3 {
-    width: 45%
-}
 
 

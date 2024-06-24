@@ -60,6 +60,7 @@ i {
     margin: auto;
     padding: 4px;
     border-radius: 32px;
+    font-family: Arial, sans-serif;
 }
 
 .fa .fa-search {
@@ -86,14 +87,15 @@ i {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 8px;
+    font-family: Arial, sans-serif;
 }
 
 .content {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 ul.socials {
@@ -103,6 +105,7 @@ ul.socials {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
 
 ul.socials>li {
@@ -115,6 +118,7 @@ ul.socials>li {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .home-page-title{
@@ -137,6 +141,7 @@ ul.socials>li {
 .home-page-text>p{
     color: white;
     font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 #book-now {
@@ -154,6 +159,7 @@ ul.socials>li {
     font-size: 16px;
     top:800px;
     order: 2;
+    font-family: Arial, sans-serif;
 }
 
 .reccomendation {
@@ -161,4 +167,41 @@ ul.socials>li {
     flex-wrap: nowrap;
     flex-direction: column;
     order: 2;
+}
+
+.about-page-text{
+    display: block;
+    order: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.about-page-text>p{
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.our-team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 1;
+    color: white;
+    font-size: 82px;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+
+.people{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.people li{
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }

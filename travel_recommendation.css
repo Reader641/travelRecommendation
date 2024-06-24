@@ -7,7 +7,8 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    position: relative
+    position: relative;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -60,7 +61,6 @@ i {
     margin: auto;
     padding: 4px;
     border-radius: 32px;
-    font-family: Arial, sans-serif;
 }
 
 .fa .fa-search {
@@ -87,7 +87,6 @@ i {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 8px;
-    font-family: Arial, sans-serif;
 }
 
 .content {
@@ -141,7 +140,6 @@ ul.socials>li {
 .home-page-text>p{
     color: white;
     font-size: 16px;
-    font-family: Arial, sans-serif;
     padding: 10px;
 }
 
@@ -160,7 +158,6 @@ ul.socials>li {
     font-size: 16px;
     top:800px;
     order: 2;
-    font-family: Arial, sans-serif;
 }
 
 .reccomendation {
@@ -181,32 +178,57 @@ ul.socials>li {
 .about-page-text>p{
     color: white;
     font-size: 16px;
-    font-family: Arial, sans-serif;
 }
 
 .our-team{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     order: 1;
     color: white;
     font-size: 82px;
     margin: 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 10px;
+    width: 100%
 }
 
 .people{
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
-.people li{
+.person{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    justify-content: space-around;
+}
+
+.person b{
     color: white;
     font-size: 16px;
-    font-family: Arial, sans-serif;
 }
+
+.person p{
+    color: rgb(128, 128, 128);
+    font-size: 11px;
+}
+
+.people-button{
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid white;
+    border-color: white;
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+

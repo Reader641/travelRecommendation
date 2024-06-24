@@ -94,7 +94,8 @@ i {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    padding-top: 20px;
 }
 
 ul.socials {
@@ -239,16 +240,32 @@ ul.socials>li {
     flex-wrap: nowrap;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
+    width: 40%;
+    align-self: flex-end;
+}
+
+.contact-form>label{
+    padding: 10px;
+}
+
+.contact-form>textarea{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
 }
 
 .contact-form>input{
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     border: 2px solid white;
-    padding: 10px
+    padding: 10px;
+    margin: 10px;
 }
 
-.contact-form>input[attribute=submit]{
+.contact-form>input[type=submit]{
     background-color:  rgb(1, 83, 70);
     border: none;
     color: white;
@@ -261,4 +278,5 @@ ul.socials>li {
     border-radius: 6px;
     opacity: 0.8;
     font-size: 16px;
+    margin: 10px;
 }

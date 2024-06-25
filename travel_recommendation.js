@@ -6,34 +6,73 @@ function searchReccomendation() {
     const input = document.getElementById('search').value.toLowerCase();
     const resultDiv = document.getElementById('reccomendation');
     resultDiv.innerHTML = ''; 
-    var reccomendation;
+
+    var img;
+    var name;
+    var description;
+    var result_item;
 
     fetch("travel_recommendation_api.json")
       .then(response => response.json())
 
       .then(data => {
             switch(input) {
-                case "beach", "beaches":
-                    reccomendation = data["beaches"]
+                case "beach":
+                case "beaches":
+                    data.beaches.forEach(beach => {
+                        img = beach.imageUrl;
+                        name = beach.name;
+                        description = beach.description;
+                        
+                        resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-item">`;
+
+                        result_item = document.getElementById('reccomendation-item');
+                        result_item.innerHTML += `    <img src="${img}" alt="hjh">`;
+                        result_item.innerHTML += `    <h2>${name}</h2>`;
+                        result_item.innerHTML += `    <p>${description}</p>`;
+                        result_item.innerHTML += `    <button class="book-now" type="button">Visit</button> `;
+                        resultDiv.innerHTML += `</div>`;
+                    });
                 break;
-                case "country", "countries":
-                    reccomendation = data["countries"]
+                case "country":
+                case "countries":
+                    data.countries.forEach(country => {
+                        country.cities.forEach(city => {
+                            img = city.imageUrl;
+                            name = city.name;
+                            description = city.description;
+                            
+                            resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-item">`;
+
+                            result_item = document.getElementById('reccomendation-item');
+                            result_item.innerHTML += `    <img src="${img}" alt="hjh">`;
+                            result_item.innerHTML += `    <h2>${name}</h2>`;
+                            result_item.innerHTML += `    <p>${description}</p>`;
+                            result_item.innerHTML += `    <button class="book-now" type="button">Visit</button> `;
+                            resultDiv.innerHTML += `</div>`;
+                        });
+                    });
                 break;
-                case "temple", "temples":
-                    reccomendation = data["beaches"]
+                case "temple":
+                case "temples":
+                    data.temples.forEach(temple => {
+                        img = temple.imageUrl;
+                        name = temple.name;
+                        description = temple.description;
+                        
+                        resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-item>`;
+
+                        result_item = document.getElementById('reccomendation-item');
+                        result_item.innerHTML += `    <img src="${img}" alt="hjh">`;
+                        result_item.innerHTML += `    <h2>${name}</h2>`;
+                        result_item.innerHTML += `    <p>${description}</p>`;
+                        result_item.innerHTML += `    <button class="book-now" type="button">Visit</button> `;
+                        resultDiv.innerHTML += `</div>`;
+                    });
                 break;
                 default:
                     resultDiv.innerHTML = 'Keyword not found.';  
             }
-            const img = reccomendation['imgUrl'];
-            const name = reccomendation['name'];
-            const description = reccomendation['description'];
-
-            
-            resultDiv.innerHTML += `<img src="${img}" alt="hjh">`;
-            resultDiv.innerHTML += `<h2>${name}</h2>`;
-            resultDiv.innerHTML += `<p>${description}</p>`;
-            resultDiv.innerHTML += `<button type="button">Visit</button> `;
         }) 
       .catch(error => {
         console.error('Error:', error);

@@ -280,3 +280,27 @@ h1{
     font-size: 16px;
     margin: 10px;
 }
+
+.reccomendation{
+    order: 2;
+}
+
+.reccomendation-item{
+    width: 33%;
+    background-color: white;
+}
+
+.reccomendation-item img{
+    width: 100%;
+}
+
+.reccomendation-item h2{
+    color: white;
+    font-size: 16px;
+}
+
+.reccomendation-item p {
+    color: white;
+    font-size: 16px;
+}
+

@@ -10,6 +10,9 @@ function searchReccomendation() {
     var img;
     var name;
     var description;
+    
+    var options;
+    var Time;
 
     fetch("travel_recommendation_api.json")
       .then(response => response.json())

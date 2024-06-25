@@ -4,13 +4,12 @@ const clear = document.getElementById('clear-button');
 
 function searchReccomendation() {
     const input = document.getElementById('search').value.toLowerCase();
-    const resultDiv = document.getElementById('reccomendation');
+    var resultDiv = document.getElementById('reccomendation');
     resultDiv.innerHTML = ''; 
 
     var img;
     var name;
     var description;
-    var result_item;
 
     fetch("travel_recommendation_api.json")
       .then(response => response.json())
@@ -24,14 +23,12 @@ function searchReccomendation() {
                         name = beach.name;
                         description = beach.description;
                         
-                        resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-item">`;
-
-                        result_item = document.getElementById('reccomendation-item');
-                        result_item.innerHTML += `    <img src="${img}" alt="hjh">`;
-                        result_item.innerHTML += `    <h2>${name}</h2>`;
-                        result_item.innerHTML += `    <p>${description}</p>`;
-                        result_item.innerHTML += `    <button class="book-now" type="button">Visit</button> `;
-                        resultDiv.innerHTML += `</div>`;
+                        resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-">
+                                                    <img src="${img}" alt="hjh">
+                                                    <h2>${name}</h2>
+                                                    <p>${description}</p>   
+                                                    <button type="button">Visit</button>
+                                                </div>`;
                     });
                 break;
                 case "country":
@@ -42,14 +39,12 @@ function searchReccomendation() {
                             name = city.name;
                             description = city.description;
                             
-                            resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-item">`;
-
-                            result_item = document.getElementById('reccomendation-item');
-                            result_item.innerHTML += `    <img src="${img}" alt="hjh">`;
-                            result_item.innerHTML += `    <h2>${name}</h2>`;
-                            result_item.innerHTML += `    <p>${description}</p>`;
-                            result_item.innerHTML += `    <button class="book-now" type="button">Visit</button> `;
-                            resultDiv.innerHTML += `</div>`;
+                            resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-">
+                                                        <img src="${img}" alt="hjh">
+                                                        <h2>${name}</h2>
+                                                        <p>${description}</p>   
+                                                        <button type="button">Visit</button>
+                                                    </div>`;
                         });
                     });
                 break;
@@ -60,14 +55,12 @@ function searchReccomendation() {
                         name = temple.name;
                         description = temple.description;
                         
-                        resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-item>`;
-
-                        result_item = document.getElementById('reccomendation-item');
-                        result_item.innerHTML += `    <img src="${img}" alt="hjh">`;
-                        result_item.innerHTML += `    <h2>${name}</h2>`;
-                        result_item.innerHTML += `    <p>${description}</p>`;
-                        result_item.innerHTML += `    <button class="book-now" type="button">Visit</button> `;
-                        resultDiv.innerHTML += `</div>`;
+                        resultDiv.innerHTML += `<div class="reccomendation-item" id="reccomendation-">
+                                                    <img src="${img}" alt="hjh">
+                                                    <h2>${name}</h2>
+                                                    <p>${description}</p>   
+                                                    <button type="button">Visit</button>
+                                                </div>`;
                     });
                 break;
                 default:
